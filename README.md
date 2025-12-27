@@ -58,3 +58,41 @@ It supports real-time, single-transaction inference and is designed with class i
 
 python -m src.train
 
+
+
+
+
+\## System Architecture
+
+
+
+```mermaid
+
+flowchart LR
+
+&nbsp;   A\[Incoming Transaction] --> B\[Feature Engineering]
+
+&nbsp;   B --> C\[Preprocessing Pipeline]
+
+&nbsp;   C --> D\[Trained ML Model]
+
+&nbsp;   D --> E\[Fraud Probability Score]
+
+&nbsp;   E --> F\[Fraud / Non-Fraud Decision]
+
+
+
+&nbsp;   subgraph Training Pipeline
+
+&nbsp;       G\[Historical Transactions] --> H\[Data Cleaning \& Encoding]
+
+&nbsp;       H --> I\[Imbalance Handling]
+
+&nbsp;       I --> J\[Model Training \& Evaluation]
+
+&nbsp;       J --> D
+
+&nbsp;   end
+
+
+
