@@ -24,6 +24,10 @@ It supports real-time, single-transaction inference and is designed with class i
 
 \- Model interpretability via feature coefficients
 
+\- Designed for real-time, per-transaction fraud scoring with millisecond-level inference latency
+
+
+
 
 
 \## Tech Stack
@@ -53,6 +57,4 @@ It supports real-time, single-transaction inference and is designed with class i
 \## How to Run
 
 python -m src.train
-
-
 
